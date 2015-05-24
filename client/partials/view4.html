@@ -1,0 +1,7 @@
+<div ng-controller="profileController">
+	<h1 class="indent">Username: {{user.username}}</h1>
+	<h3 class="indent"><a href="#/main">Back to Main</a></h3>
+	<p class="indent">Username:<input type="text" ng-model="changeUser.username" value="user.username"></p>
+	<p class="indent">Password:<input type="password" ng-model="changeUser.password" value="user.password"></p>
+	<button class="indent btn btn-primary" ng-click="updateUser()">Update</button>
+</div>

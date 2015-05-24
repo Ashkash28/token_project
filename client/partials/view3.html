@@ -1,0 +1,18 @@
+<div ng-controller="tokensController">
+	<h1 class="indent">Username: {{user.username}}</h1>
+	<h3 class="indent"><a href="#/main">Back to Main</a></h3>
+	<button class="indent btn btn-info" ng-click="addToken(user)">Add Token</button>
+	<h3>Tokens</h3>
+	<table class="table table-bordered table-hover">
+		<thead>
+			<th>Token</th>
+			<th>Action</th>
+		</thead>
+		<tbody>
+			<tr ng-repeat="token in user.tokens">
+				<td>{{ token }}</td>
+				<td><a ng-click="removeToken(user, token)">Remove</a></td>
+			</tr>
+		</tbody>
+	</table>
+</div>

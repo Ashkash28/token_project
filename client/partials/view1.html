@@ -1,0 +1,20 @@
+<div id="sign_reg">
+	<div class="register" ng-controller="usersController">
+		<h1>Register</h1>
+		<ul ng-repeat="(key, value) in errors">
+			<h4 class="error" ng-repeat="single in value">{{single}}</h4>
+		</ul>
+		<h4 class="success">{{ success }}</h4>
+		<p>Username:<input class="first" ng-model="newUser.username" type="text" placeholder="Enter an email"></p>
+		<p>Password:<input class="second" ng-model="newUser.password" type="password" placeholder="Enter a password"></p>
+		<p>Confirmation:<input ng-model="newUser.confirm" type="password" placeholder="Retype password"></p>
+		<button ng-click="addUser()" class="btn btn-primary">Register User</button>
+	</div>
+	<div class="signin" ng-controller="sessionsController">
+		<h1>Sign In</h1>
+		<h4 class="error">{{ message.error }}</h4>
+		<p>Username:<input ng-model="oldUser.username" type="text" placeholder="Enter email"></p>
+		<p>Password:<input class="third" ng-model="oldUser.password" type="password" placeholder="Enter password"></p>
+		<button ng-click="signIn()" class="btn btn-success">Sign in</button>
+	</div>
+</div>

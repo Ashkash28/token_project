@@ -1,0 +1,53 @@
+body{
+	background-image: url('/static/images/sprinkles.png');
+}
+
+/*--------------VIEW 1 CSS------------------------*/
+.register{
+	display: inline-block;
+	margin-left: 20px;
+}
+
+.signin{
+	display: inline-block;
+	vertical-align: top;
+	margin-left: 300px;
+	position: absolute;
+}
+
+.error{
+	color: red;
+}
+
+.success{
+	color: green;
+}
+
+/*CSS FOR INPUTS*/
+.first{
+	margin-left: 18px;
+}
+
+.second{
+	margin-left: 19px;
+}
+
+.third{
+	margin-left: 2px;
+}
+
+/*--------------VIEW 2 CSS------------------------*/
+.welcome{
+	width: 390px;
+	margin: 10px 0px 0px 20px;
+}
+.signout{
+	vertical-align: top;
+	margin-left: 22px;
+}
+
+/*--------------VIEW 3 CSS------------------------*/
+.indent{
+	margin-left: 20px;
+}
+/*--------------VIEW 4 CSS------------------------*/
